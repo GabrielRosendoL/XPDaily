@@ -1,2 +1,2 @@
-# XPDaily
-XDaily Project
+# XPDailyApp
+XDailyApp Project
