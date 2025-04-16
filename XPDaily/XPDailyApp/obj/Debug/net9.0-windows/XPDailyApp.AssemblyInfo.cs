@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("XPDailyApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a845ff45d183826bc302de4c8ed3cb07e249b7ce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87fc4c91165ef192b5fa1cb0b59438352973fdc0")]
 [assembly: System.Reflection.AssemblyProductAttribute("XPDailyApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("XPDailyApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
