@@ -1,0 +1,34 @@
+# Arquivos do Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Arquivos de build
+bin/
+obj/
+*.cache
+*.log
+*.ncb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Arquivos de pacotes
+packages/
+*.nupkg
+
+# Arquivos de teste
+TestResults/
+*.trx
+
+# Arquivos de banco de dados
+*.mdf
+*.ldf
+
+# Arquivos de backup
+*.bak
+*.tmp
+*.temp 
