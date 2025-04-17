@@ -1,5 +1,6 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows.Input;
 using XPDailyApp.Models;
 
 namespace XPDailyApp.ViewModels;
@@ -40,7 +41,14 @@ public class MainViewModel : INotifyPropertyChanged
         }
     }
 
-    public void SaveText()
+    public ICommand SaveTextCommand { get; }
+
+    public MainViewModel()
+    {
+        SaveTextCommand = new RelayCommand(SaveText);
+    }
+
+    private void SaveText()
     {
         if (string.IsNullOrWhiteSpace(InputText))
         {
