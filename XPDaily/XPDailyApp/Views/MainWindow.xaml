@@ -4,13 +4,23 @@
         Title="XPDaily" Height="450" Width="800"
         WindowStartupLocation="CenterScreen"
         Background="White">
-    
-    <Grid>
-        <TextBlock Text="Template Inicial"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center"
-                   FontSize="24"
-                   FontWeight="Bold"
-                   Foreground="Gray"/>
-    </Grid>
+
+	<Grid>
+		<Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" />
+		<Grid>
+			<TextBlock Text="XP Daily"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Top"
+                       Margin="0,20,0,0"
+                       FontSize="24"
+                       FontWeight="Bold"
+                       Foreground="Gray"/>
+			<Button Content="Ir para Primeira Página"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Width="200"
+                    Height="50"
+                    Click="NavigateToFirstPage"/>
+		</Grid>
+	</Grid>
 </Window>
