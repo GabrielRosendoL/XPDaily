@@ -50,6 +50,10 @@ app.MapGet("/weatherforecast", () =>
 app.MapGet("/api/hello", () => Results.Json(new { message = "Olá do backend!" }))
    .WithName("Hello");
 
+// O "app.UseCors" serve para habilitar o CORS (Cross-Origin Resource Sharing) no ASP.NET Core
+// Isso é necessário para permitir que o frontend (que está rodando em um domínio diferente) faça requisições para o backend
+app.UseCors("AllowFrontend");
+
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
