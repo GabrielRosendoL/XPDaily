@@ -1,11 +1,7 @@
-import HelloMessage from './components/HelloMessage';
+import Home from './pages/Home';
 
 function App() {
-  return (
-    <div>
-      <HelloMessage />
-    </div>
-  );
+  return <Home />;
 }
 
 export default App;
