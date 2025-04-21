@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import styles from './HelloMessage.module.css';
 
 const HelloMessage = () => {
   const [mensagem, setMensagem] = useState('');
@@ -11,9 +12,9 @@ const HelloMessage = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Mensagem do backend:</h2>
-      <p>{mensagem}</p>
+    <div className={styles.container}>
+      <h2 className={styles.title}>Mensagem do backend:</h2>
+      <p className={styles.text}>{mensagem}</p>
     </div>
   );
 };
