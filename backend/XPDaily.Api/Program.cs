@@ -25,6 +25,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+// O "app.UseCors" serve para habilitar o CORS (Cross-Origin Resource Sharing) no ASP.NET Core
+// Isso é necessário para permitir que o frontend (que está rodando em um domínio diferente) faça requisições para o backend
+app.UseCors("AllowFrontend");
 
 var summaries = new[]
 {
@@ -49,10 +52,6 @@ app.MapGet("/weatherforecast", () =>
 // Esta rota é apenas para teste, para verificar se o backend está funcionando corretamente
 app.MapGet("/api/hello", () => Results.Json(new { message = "Olá do backend!" }))
    .WithName("Hello");
-
-// O "app.UseCors" serve para habilitar o CORS (Cross-Origin Resource Sharing) no ASP.NET Core
-// Isso é necessário para permitir que o frontend (que está rodando em um domínio diferente) faça requisições para o backend
-app.UseCors("AllowFrontend");
 
 app.Run();
 
